@@ -26,7 +26,7 @@ export class ProductListPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductListPage');
-    this.http.get('http://192.168.0.105:8000/api/products')
+    this.http.get('http://127.0.0.1:8000/api/products')
     	.toPromise().then((response) => {
     		this.products = response.json();
     	});
