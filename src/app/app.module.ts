@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 import { ProductListPage } from "../pages/product-list/product-list";
 import { ProductDetailPage } from "../pages/product-detail/product-detail";
 import { CheckoutPage } from "../pages/checkout/checkout";

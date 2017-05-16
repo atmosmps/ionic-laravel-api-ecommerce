@@ -27,12 +27,12 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-
   login() {
-      this.http.post('http://localhost:8000/api/login',this.user)
-          .toPromise().then((response) => {
-        window.localStorage['token'] = response.json().token;
-        this.navCtrl.setRoot(ProductListPage)
+
+      this.http.post('http://127.0.0.1:8000/api/login', this.user)
+               .toPromise().then((response) => {
+              window.localStorage['token'] = response.json().token;
+              this.navCtrl.setRoot(ProductListPage)
       });
   }
 }
