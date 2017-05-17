@@ -1,26 +1,8 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Introdução
 
-## How to use this template
+Esta é uma aplicação simples em [Ionic](http://ionicframework.com/docs/) que consome uma API simples em [Laravel 5.4](https://laravel.com/docs/5.4) e lista produtos de uma loja, e habilitados para compra.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+A aplicação em Laravel 5.4 pode ser consultada [aqui](https://github.com/atmosmaciel/laravel-api-ecommerce).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
-```
-
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic platform add ios
-$ ionic run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+## Licença
+Esta aplicação está sob uma licença [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/).
