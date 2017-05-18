@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Http } from "@angular/http";
-import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/toPromise';   
 import { ProductListPage } from "../product-list/product-list";
 /*
   Generated class for the Login page.
@@ -30,9 +30,9 @@ export class LoginPage {
   login() {
 
       this.http.post('http://127.0.0.1:8000/api/login', this.user)
-               .toPromise().then((response) => {
-              window.localStorage['token'] = response.json().token;
-              this.navCtrl.setRoot(ProductListPage)
-      });
+                .toPromise().then((response) => {
+                  window.localStorage['token'] = response.json().token;
+                  this.navCtrl.setRoot(ProductListPage)
+                });
   }
 }
