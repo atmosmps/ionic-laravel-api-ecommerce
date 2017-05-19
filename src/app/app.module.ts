@@ -15,6 +15,7 @@ import { ProductDetailPage } from "../pages/product-detail/product-detail";
 import { CheckoutPage } from "../pages/checkout/checkout";
 import { LoginPage } from "../pages/login/login";
 import { MyCartPage } from "../pages/my-cart/my-cart";
+import { CartProvider } from '../providers/cart/cart';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MyCartPage } from "../pages/my-cart/my-cart";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CartProvider
   ]
 })
 export class AppModule {}

@@ -12,11 +12,19 @@
 </ion-header>
 
 <ion-content padding>
+
   <ion-card *ngIf="product">
+
     <ion-card-content>
+
       <ion-card-title>{{product.name}}</ion-card-title>
       <p>R$ {{product.value}}</p>
       <p>{{product.description}}</p>
+
     </ion-card-content>
+
   </ion-card>
+
+  <button ion-button full type="button" (click)="addToCart()">+ Carrinho</button>
+
 </ion-content>
