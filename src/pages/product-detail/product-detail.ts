@@ -29,11 +29,11 @@ export class ProductDetailPage {
     let requestOptions = new RequestOptions({headers});
     this.http.get(`http://127.0.0.1:8000/api/products/${this.navParams.get('id')}`, requestOptions)
         .toPromise().then((response) => {
-      this.product = response.json();
+          this.product = response.json();
     })
   }
 
-  addToCard() {
+  addToCart() {
     this.cart.addItem(this.product);
     this.navCtrl.setRoot(ProductListPage)
   }
