@@ -44,7 +44,7 @@ export class CheckoutPage {
     let headers = new Headers();
     headers.set('Authorization', `Bearer ${window.localStorage['token']}`);
     let requestOptions = new RequestOptions({headers});
-    this.http.get('http://localhost:8000/api/session',requestOptions)
+    this.http.get('http://localhost:8000/api/session', requestOptions)
       .toPromise().then((response) => {
       PagSeguroDirectPayment.setSessionId(response.json().session_id);
       this.getBrandFromNum();
@@ -78,16 +78,7 @@ export class CheckoutPage {
   }
 
   sendPayment() {
-    // let headers = new Headers();
-    // headers.set('Authorization', `Bearer ${window.localStorage['token']}`);
-    // let requestOptions = new RequestOptions({headers});
-    // this.http.post('http://localhost:8000/api/order', {
-    //   items: this.cart.items,
-    //   token: this.creditCard.token,
-    //   hash: PagSeguroDirectPayment.getSenderHash(),
-    //   total: this.cart.total
-    // }, requestOptions)
-    //   .toPromise().then(response => console.log(response));
+
   }
 
 }
