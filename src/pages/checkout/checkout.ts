@@ -46,8 +46,9 @@ export class CheckoutPage {
     let requestOptions = new RequestOptions({headers});
     this.http.get('http://localhost:8000/api/session', requestOptions)
       .toPromise().then((response) => {
-      PagSeguroDirectPayment.setSessionId(response.json().session_id);
-      this.getBrandFromNum();
+      //PagSeguroDirectPayment.setSessionId(response.json().session_id);
+      alert(response.json().session_id);
+      //this.getBrandFromNum();
     })
   }
 
